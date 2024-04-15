@@ -38,10 +38,12 @@ function convertValues() {
 function changeCurrency() {
 
     const currencyName = document.getElementById("currency-name");
+    const currencyImg = document.querySelector(".currency-img")
 
     if(currencySelect.value === "dolar"){
         
         currencyName.innerHTML = "Dólar americano"
+        currencyImg.src = "./assets/dolar.png"
         
 
     }
@@ -49,10 +51,11 @@ function changeCurrency() {
     if(currencySelect.value === "euro"){
         
         currencyName.innerHTML = "Euro"
+        currencyImg.src = './assets/euro.png'
     }
 
+    convertValues()
 
-//   console.log("Funcionou");
 }
 
 currencySelect.addEventListener("change", changeCurrency);
