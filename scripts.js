@@ -64,7 +64,6 @@ function changeCurrency() {
         currencyName.innerHTML = "Dólar americano"
         currencyImg.src = "./assets/dolar.png"
         
-
     }
 
     if(currencySelect.value === "euro"){
@@ -82,7 +81,6 @@ function changeCurrency() {
       currencyName.innerHTML = "Bitcoin"
       currencyImg.src = "./assets/bitcoin.svg"
     }
-
 
 
     convertValues()
